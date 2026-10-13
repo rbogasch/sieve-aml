@@ -204,6 +204,17 @@ docker compose up sieve-server
 
 ## Tech Stack
 
+Documentation uses Python 3.14 in a project virtual environment. From the
+repository root, install its dependencies and build the HTML documentation:
+
+```bash
+make -C docs setup-python
+make -C docs html-no-doxygen
+```
+
+The documentation Makefile selects `.venv/bin/python` automatically. The Java
+application and its Docker images keep their existing runtime setup.
+
 - **Java 21** — Records, sealed interfaces, pattern matching, virtual threads
 - **Vert.x 4.5 + Netty** — High-performance server (event-loop, zero-copy I/O)
 - **Spring Boot 3.3** — Full-featured server (PostgreSQL, Swagger, scheduling)

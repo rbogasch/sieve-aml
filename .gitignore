@@ -59,6 +59,7 @@ replay_pid*
 doxygen/
 docs/_build/
 docs/.venv/
+.venv/
 
 # JMeter results
 sieve-benchmark/results/
